@@ -1,0 +1,265 @@
+ /*entire body*/
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*header and its child elements - logo & user options*/
+header 
+{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+/*logo*/
+.logo 
+{
+    height: 50px;
+    width: 150px;
+}
+/*user options*/
+.user-options 
+{
+    display: flex;
+    justify-content: space-between;    
+    font-size: small; 
+}
+.user-options a 
+{
+    color: #333;
+    text-decoration: none;
+    margin: 20px; 
+}
+.user-options a:hover
+{
+    text-decoration: underline;
+}
+/*menu bar*/
+.menu 
+{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+}
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn 
+{
+    font-size: medium;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover
+{
+    background-color: #555;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+/*appliances*/ 
+.image-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 30px;
+}
+.image 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+.image:hover 
+{
+    transform: scale(1.1); 
+}
+.explore-option 
+{
+    width: auto;
+    height: auto;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    border-radius: 5px;
+}
+.explore-option a 
+{
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+}
+.explore-option a:hover 
+{
+    transform: scale(1.1); 
+}
+/*sale*/
+.sale 
+{
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    display: flex;             
+    justify-content: center;
+    font-size: larger;
+    white-space: nowrap;
+    overflow: hidden;          
+    animation: colorChange 5s infinite;
+}
+@keyframes colorChange 
+{
+    0% { color: #e000d1; }  
+    25% { color: #ff0000; } 
+    50% { color: #00ff00; } 
+    75% { color: #0000ff; } 
+    100% { color: #000000; } 
+}
+/*living room*/
+.gridl-container 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin: 35px;
+}
+.gridl-item 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+.gridl-item:hover 
+{
+    transform: scale(1.05); 
+}
+/*bed room - study and office*/
+.gridb-container 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin: 35px;
+}
+.gridb-item 
+{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+    border-radius: 5px;
+}
+.gridb-item:hover 
+{
+    transform: scale(1.05); 
+}
+/*kitchen and dining*/
+.gridk-container 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin: 35px;
+}
+.gridk-item 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+.gridk-item:hover 
+{
+    transform: scale(1.05); 
+}
+/*explore more*/
+.explore 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: larger;
+}
+.explore a
+{
+    color: #fff;
+    text-decoration: none; 
+}
+.explore a:hover
+{
+    text-decoration: underline;
+}
+/*brands*/
+.brand-logos 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo 
+{
+    width: 150px;
+    margin: 15px;
+}
+/*contact*/
+.contact-info 
+{
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+}
+.contact-info p 
+{
+    margin: 5px 0;
+}
+/*footer*/
+footer 
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
